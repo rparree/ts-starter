@@ -7,7 +7,7 @@
   "private": false,
   "scripts": {
     "watch": "babel --extensions '.ts,.js'  ./src -d dist --watch --source-maps inline",
-    "build": "npm-run-all webyarns:build:*",
+    "build": "npm-run-all build:*",
     "build:babel": "babel  --extensions '.ts,.js' ./src -d dist",
     "build:uglifyjs": "uglifyjs-folder dist  -e -o ./dist/ --pattern \\\"*.js,!*.min.js\\\" --config-file=uglify.json ",
     "tsc": "tsc"
